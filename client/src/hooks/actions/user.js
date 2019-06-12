@@ -35,7 +35,7 @@ export default set => ({
     set(state => ({ ...state, beingRegister: true }));
     try {
       const result = await query({ method: METHODS.POST, endpoint: ENDPOINTS.register, data });
-      if (result.status === HTTPStatus.OK) {
+      if (result.status === HTTPStatus.CREATED) {
         set(state => ({
           ...state,
           isAuth: true,
