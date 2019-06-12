@@ -44,4 +44,4 @@ See [https://github.com/bkdev98/upload.innoteq.vn/issues](https://github.com/bkd
 
 ### License
 
-MIT I guess.
+[MIT License](https://github.com/bkdev98/upload.innoteq.vn/blob/master/license.md)
