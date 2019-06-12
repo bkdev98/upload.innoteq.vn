@@ -2,7 +2,7 @@
 
 > Simple image upload server using CRA, Express, Sharp and S3, deployed on Heroku.
 
-> It can also used as a template for react-express type apps, with authentication and ant-design configured.
+> It can also be used as a template for react-express type apps, with authentication and ant-design configured.
 
 ### File structure
 
