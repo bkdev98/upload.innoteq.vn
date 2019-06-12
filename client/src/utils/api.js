@@ -2,7 +2,8 @@ import axios from 'axios';
 
 import { api } from '../hooks/useUser';
 
-const API_URL = 'http://localhost:9843/api/v1';
+// const API_URL = 'http://localhost:9843/api/v1';
+const API_URL = 'https://innoteq-upload.herokuapp.com/api/v1';
 
 export const query = async ({
   method = METHODS.GET,
