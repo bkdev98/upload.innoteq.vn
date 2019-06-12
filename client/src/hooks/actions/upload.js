@@ -52,9 +52,8 @@ export default set => ({
         set(state => ({
           ...state,
           list: [ result.data, ...state.list ],
-          listAll: [ result.data, ...state.listAll ],
           total: state.total + 1,
-          totalAll: state.totalAll + 1,
+          beingUpload: false,
         }));
         callback.success();
       } else {

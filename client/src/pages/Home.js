@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import styled from 'styled-components';
 import { withRouter } from 'react-router-dom';
-import { Button, Input, Icon, Card, Pagination, Spin, Row, Col, Empty, Layout } from 'antd';
+import { Button, Input, Icon, Card, Pagination, Spin, Row, Col, Empty, Layout, message } from 'antd';
 import moment from 'moment';
 
 import Wrapper from '../components/Wrapper';
@@ -49,7 +49,10 @@ const Home = ({ history }) => {
   }
 
   const handleUpload = (e) => {
-    uploadFile(e.target.files[0], { success: () => {}, failure: () => {} });
+    uploadFile(e.target.files[0], {
+      success: () => message.success('Tải lên thành công!'),
+      failure: () => message.error('Có lỗi xảy ra!'),
+    });
   }
 
   const handleSelectPage = page => {

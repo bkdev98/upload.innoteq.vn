@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Modal, Button, Input, Icon, Card, Pagination, Spin, Row, Col, Empty } from 'antd';
+import { Modal, Button, Input, Icon, Card, Pagination, Spin, Row, Col, Empty, message } from 'antd';
 import styled from 'styled-components';
 import moment from 'moment';
 
@@ -35,7 +35,10 @@ const UploadPicker = ({ title, visible, onCancel, onSubmit, ...props }) => {
   }
 
   const handleUpload = (e) => {
-    uploadFile(e.target.files[0], { success: () => {}, failure: () => {} });
+    uploadFile(e.target.files[0], {
+      success: () => message.success('Tải lên thành công!'),
+      failure: () => message.error('Có lỗi xảy ra!'),
+    });
   }
 
   const handleSelectPage = page => {
