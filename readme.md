@@ -7,7 +7,13 @@
 ### File structure
 
 - /client: React project using [create-react-app](https://github.com/facebook/create-react-app).
-- /server: Our [express](https://expressjs.com/) app, compiled by [babel](https://babeljs.io/).
+  - [Ant Design](https://ant.design) and [React Router](https://reacttraining.com/react-router/web) configured.
+  - Using [hooks](https://reactjs.org/docs/hooks-intro.html) and [zustand](https://github.com/react-spring/zustand) for state management.
+  - Styling using [styled-components](https://styled-components.com).
+- /server: Our [express](https://expressjs.com/) app, compiled with [babel](https://babeljs.io/).
+  - Using [mongoose](https://mongoosejs.com/) for quick MongoDB access.
+  - [sharp](https://github.com/lovell/sharp) for image processing.
+  - [passport](http://www.passportjs.org/) for authentication.
 
 ### Development
 
