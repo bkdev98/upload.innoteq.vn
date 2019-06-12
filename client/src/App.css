@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,800&display=swap&subset=vietnamese');
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.ant-message {
+  top: 12px !important;
+}
+
+.ant-avatar>img {
+  object-fit: cover;
+}
