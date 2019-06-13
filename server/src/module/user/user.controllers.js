@@ -32,7 +32,7 @@ const getUser = async (req, res) => {
   try {
     const user = await User
       .findOne({ _id: req.params.id, isRemoved: false });
-    return res.status(HTTPStatus.OK).json(user.toJSON());
+    return res.status(HTTPStatus.OK).json(user.toAuthJSON());
   } catch (error) {
     return res.status(HTTPStatus.BAD_REQUEST).json(error.message);
   }
