@@ -8,7 +8,7 @@ async function getListFile(req, res) {
     const limit = parseInt(req.query.limit, 0) || 50;
     const skip = parseInt(req.query.skip, 0) || 0;
     const search = req.query.search;
-    const queries = { isRemoved: false };
+    const queries = { user: req.user.id, isRemoved: false };
     if (search && search.length) {
       queries.$text = { $search: search };
     }
