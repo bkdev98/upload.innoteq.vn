@@ -61,14 +61,14 @@ UserSchema.methods = {
     return compareSync(password, this.password);
   },
   generateJWT(lifespan) {
-    const today = new Date();
-    const expirationDate = new Date(today);
-    expirationDate.setDate(today.getDate() + lifespan);
+//     const today = new Date();
+//     const expirationDate = new Date(today);
+//     expirationDate.setDate(today.getDate() + lifespan);
 
     return jwt.sign(
       {
         _id: this._id,
-        exp: parseInt(expirationDate.getTime() / 1000, 10),
+//         exp: parseInt(expirationDate.getTime() / 1000, 10),
       },
       constants.JWT_SECRET,
     );
@@ -85,7 +85,9 @@ UserSchema.methods = {
   toAuthJSON() {
     return {
       ...this.toJSON(),
-      token: this.generateJWT(constants.AUTH_TOKEN_LIFESPAN),
+      token: this.generateJWT(
+//         constants.AUTH_TOKEN_LIFESPAN
+      ),
     };
   },
 };
