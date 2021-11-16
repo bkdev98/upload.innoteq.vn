@@ -19,7 +19,7 @@
     "nodemon": "^1.19.1"
   },
   "dependencies": {
-    "aws-sdk": "^2.471.0",
+    "aws-sdk": "^2.814.0",
     "bcrypt-nodejs": "^0.0.3",
     "body-parser": "^1.19.0",
     "compression": "^1.7.4",
