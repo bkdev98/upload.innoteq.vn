@@ -17,7 +17,7 @@
     "react-dom": "^16.8.6",
     "react-json-view": "^1.19.1",
     "react-router-dom": "^5.0.1",
-    "react-scripts": "3.0.1",
+    "react-scripts": "5.0.1",
     "styled-components": "^4.3.1",
     "zustand": "^0.2.1"
   },
